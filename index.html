@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lara Games - Grupo 11</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="Assets/Imagens/Grupo 11 - Icone.png" type="image/png">
+    <link rel="stylesheet" href="./Assets/CSS/styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="row" style="background-color: #27233f">
+        <ol id="imghead"><img src="./Assets/Imagens/Grupo 11 - Icone.png" alt="Lara Games Logo"></ol>
+        <nav id="navbar">
+            <ol><a href="#home">HOME</a></ol>
+            <ol><a href="#sobre">SOBRE</a></ol>
+            <ol><a href="#jogos">JOGOS</a></ol>
+        </nav>
+    </header>
+
+    <!-- Banner ou imagem destacada -->
+    <div id="Banner-1"></div>
+
+    <!-- Seção "Sobre" -->
+    <section id="sobre">
+        <div id="titulo">
+            <h1>QUEM SOMOS?</h1>
+        </div>
+        <div id="texto">
+            <p id="descricao">
+                Somos estudantes de Web Design da FIAP, trabalhando em uma plataforma interativa para jogos. Estamos desenvolvendo o Lara Games, com foco em inovação, acessibilidade e experiência do usuário.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção de Listagem de Jogos (adaptação para Lara Games) -->
+    <section id="jogos">
+        <h1>LISTA DE JOGOS</h1>
+
+        <div id="game-cards">
+            <!-- Horizon Chase -->
+            <div class="game-card">
+                <img src="./Assets/Imagens/game-covers/Horizon-Chase-Turbo.jpeg" alt="Horizon Chase Turbo">
+                <h3>Horizon Chase Turbo</h3>
+                <p>Um jogo de corrida inspirado nos clássicos dos anos 90, com gráficos vibrantes e trilha sonora nostálgica.</p>
+                <a href="https://www.horizonchaseturbo.com" target="_blank">Saiba mais</a>
+            </div>
+
+            <!-- Dandara -->
+            <div class="game-card">
+                <img src="./Assets/Imagens/game-covers/Dandara.jpg" alt="Dandara">
+                <h3>Dandara</h3>
+                <p>Uma aventura 2D com uma mecânica inovadora onde a protagonista desafia a gravidade e explora um mundo único.</p>
+                <a href="https://www.longhathouse.com/dandara/" target="_blank">Saiba mais</a>
+            </div>
+
+            <!-- Chroma Squad -->
+            <div class="game-card">
+                <img src="./Assets/Imagens/game-covers/Chroma-Squad.png" alt="Chroma Squad">
+                <h3>Chroma Squad</h3>
+                <p>Um RPG tático com base em turnos, onde os jogadores comandam um grupo de atores de uma série inspirada em Power Rangers.</p>
+                <a href="http://www.chromasquad.com/" target="_blank">Saiba mais</a>
+            </div>
+
+            <!-- Outros cards de jogos podem ser adicionados aqui -->
+        </div>
+    </section>
+
+    <!-- Inclusão do Plugin de Acessibilidade VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
